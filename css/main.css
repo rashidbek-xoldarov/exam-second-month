@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* VARIABLES */
 
 :root {
@@ -485,7 +492,7 @@ body {
   color: #78c0de;
 }
 
-.hero-info__text {
+.info-hero__text {
   margin-top: 0;
   margin-bottom: 38px;
   padding-right: 113px;
@@ -1057,7 +1064,7 @@ body {
 }
 
 /* Article */
-.aricle {
+.article {
   margin-bottom: 265px;
 }
 
@@ -1166,7 +1173,7 @@ body {
   margin-left: auto;
 }
 
-.info-aricle__title {
+.info-article__title {
   margin-top: 0;
   margin-bottom: 10px;
   font-weight: bold;
@@ -1267,7 +1274,7 @@ body {
   margin-bottom: 29px;
 }
 
-.active .info-aricle__title {
+.active .info-article__title {
   margin-bottom: 15px;
 }
 
@@ -1404,7 +1411,7 @@ body {
   resize: none;
 }
 
-.connect__form-btn {
+.contact__form-btn{
   display: inline-block;
   margin-top: 30px;
   padding: 15px 50px;
