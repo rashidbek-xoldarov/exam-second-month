@@ -29,7 +29,7 @@
 @font-face {
   font-family: "Futura PT";
   src: url("../fonts/FuturaPT-Bold.woff2") format("woff2"),
-    url("../fonts/FuturaPT-Bold.woff") format("woff");
+  url("../fonts/FuturaPT-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -38,7 +38,7 @@
 @font-face {
   font-family: "Futura PT Book";
   src: url("../fonts/FuturaPT-Book.woff2") format("woff2"),
-    url("../fonts/FuturaPT-Book.woff") format("woff");
+  url("../fonts/FuturaPT-Book.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -47,7 +47,7 @@
 @font-face {
   font-family: "Futura PT";
   src: url("../fonts/FuturaPT-Medium.woff2") format("woff2"),
-    url("../fonts/FuturaPT-Medium.woff") format("woff");
+  url("../fonts/FuturaPT-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -56,7 +56,7 @@
 @font-face {
   font-family: "Futura PT";
   src: url("../fonts/FuturaPT-Light.woff2") format("woff2"),
-    url("../fonts/FuturaPT-Light.woff") format("woff");
+  url("../fonts/FuturaPT-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -463,10 +463,10 @@ body {
 /* Hero */
 .hero {
   background-image: url("../images/pet-animals.png"),
-    url("../images/parrot.png");
+  url("../images/parrot.png");
   background-repeat: no-repeat;
   background-position: top -100px left calc(50% - 502px),
-    bottom 0 right calc(50% - 695px);
+  bottom 0 right calc(50% - 695px);
 }
 
 .hero__inner {
@@ -1423,8 +1423,159 @@ body {
   background-color: #ffbd54;
 }
 
+/* Servises html */
+.intro {
+  background-image: url('../images/big-parrot.png');
+  background-repeat: no-repeat;
+  background-position: top 0 left calc(50% + 493px);
+}
+
+.intro__inner {
+}
+
+.intro__info {
+  display: inline-block;
+  max-width: 447px;
+  margin-left: 112px;
+  padding-top: 118px;
+  padding-bottom: 140px;
+}
+
+.intro__title {
+  margin-top: 0;
+  margin-bottom: 21px;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 64px;
+  color: #333333;
+}
+
+.intro__text {
+  margin: 0;
+}
+
+.intro__list {
+  display: grid;
+  grid-template-columns: repeat(4, 305px);
+  justify-content: space-between;
+  grid-row-gap: 34px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.intro__item::before {
+  display: inline-block;
+  margin-bottom: 21px;
+  width: 86px;
+  height: 78px;
+  content: "";
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.intro__item:nth-child(1)::before {
+  background-image: url("../images/doctor.svg");
+}
+
+.intro__item:nth-child(2)::before {
+  background-image: url("../images/nurse.svg");
+}
+
+.intro__item:nth-child(3)::before {
+  background-image: url("../images/puppy-getting-injection.svg");
+}
+
+.intro__item:nth-child(4)::before {
+  background-image: url("../images/dog-skin-desease.svg");
+}
+
+.intro__item:nth-child(5)::before {
+  background-image: url("../images/labaratory.svg");
+}
+
+.intro__item:nth-child(6)::before {
+  background-image: url("../images/ophtolmolgy.svg");
+}
+
+.intro__item:nth-child(7)::before {
+  background-image: url("../images/diagnostics.svg");
+}
+
+.intro__item:nth-child(8)::before {
+  background-image: url("../images/chipping.svg");
+}
+
+.intro__item:nth-child(9)::before {
+  background-image: url("../images/passport.svg");
+}
+
+.intro__item:nth-child(10)::before {
+  background-image: url("../images/injection.svg");
+}
+
+.intro__item:nth-child(11)::before {
+  background-image: url("../images/stomotology.svg");
+}
+
+.intro__item:nth-child(12)::before {
+  background-image: url("../images/call-center.svg");
+}
+
+.item-intro {
+  padding: 58px 22px 45px 54px;
+  background: #FFFFFF;
+  border-radius: 5px 5px 0px 0px;
+  background-image: url('../images/paw.svg');
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.item-intro:hover {
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.2));
+}
+
+.item-intro__title {
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 34px;
+  color: #333333;
+}
+
+.item-intro__text {
+  margin-top: 0;
+  margin-bottom: 26px;
+}
+
+.item-intro:nth-child(odd) .item-intro__link {
+  background-color: #ffbd54;
+}
+
+.item-intro:nth-child(odd) .item-intro__link:hover {
+  background-color: #000000;
+  transition: 0.2s ease;
+}
+
+.item-intro:nth-child(even) .item-intro__link {
+  background-color: #78C0DE;
+}
+
+.item-intro__link {
+  display: inline-block;
+  padding: 15px 30px 14px;
+  border-radius: 3px;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
 /* Footer */
 .site-footer {
+  margin-top: 247px;
   background-color: #f3f3f3;
   border: 1px solid #ebebeb;
 }
@@ -1658,16 +1809,16 @@ body {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (-o-min-device-pixel-ratio: 2/1),
-  only screen and (min-device-pixel-ratio: 2),
-  only screen and (min-resolution: 192dpi),
-  only screen and (min-resolution: 2dppx) {
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
   body {
     background-image: url("../images/bg@2x.png");
   }
   .hero {
     background-image: url("../images/pet-animals@2x.png"),
-      url("../images/parrot@2x.png");
+    url("../images/parrot@2x.png");
   }
   .update {
     background-image: url("../images/article-bg@2x.jpg");
