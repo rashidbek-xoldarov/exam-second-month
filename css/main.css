@@ -29,7 +29,7 @@
 @font-face {
   font-family: "Futura PT";
   src: url("../fonts/FuturaPT-Bold.woff2") format("woff2"),
-  url("../fonts/FuturaPT-Bold.woff") format("woff");
+    url("../fonts/FuturaPT-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -38,7 +38,7 @@
 @font-face {
   font-family: "Futura PT Book";
   src: url("../fonts/FuturaPT-Book.woff2") format("woff2"),
-  url("../fonts/FuturaPT-Book.woff") format("woff");
+    url("../fonts/FuturaPT-Book.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -47,7 +47,7 @@
 @font-face {
   font-family: "Futura PT";
   src: url("../fonts/FuturaPT-Medium.woff2") format("woff2"),
-  url("../fonts/FuturaPT-Medium.woff") format("woff");
+    url("../fonts/FuturaPT-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -56,7 +56,7 @@
 @font-face {
   font-family: "Futura PT";
   src: url("../fonts/FuturaPT-Light.woff2") format("woff2"),
-  url("../fonts/FuturaPT-Light.woff") format("woff");
+    url("../fonts/FuturaPT-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -97,7 +97,7 @@ body {
   color: var(--main-text-color);
   background-color: var(--main-bg-color);
   background-image: url("../images/bg.png");
-  background-position: top 140px center;
+  background-position: top 100px center;
 }
 
 /* VISUALLY-HIDDEN */
@@ -142,6 +142,10 @@ body {
 }
 
 /* Header */
+.site-header {
+  background-color: inherit;
+}
+
 .site-header__bottom-wrapper {
   background-color: #fff;
 }
@@ -463,10 +467,10 @@ body {
 /* Hero */
 .hero {
   background-image: url("../images/pet-animals.png"),
-  url("../images/parrot.png");
+    url("../images/parrot.png");
   background-repeat: no-repeat;
   background-position: top -100px left calc(50% - 502px),
-  bottom 0 right calc(50% - 695px);
+    bottom 0 right calc(50% - 695px);
 }
 
 .hero__inner {
@@ -1411,7 +1415,7 @@ body {
   resize: none;
 }
 
-.contact__form-btn{
+.contact__form-btn {
   display: inline-block;
   margin-top: 30px;
   padding: 15px 50px;
@@ -1425,7 +1429,7 @@ body {
 
 /* Servises html */
 .intro {
-  background-image: url('../images/big-parrot.png');
+  background-image: url("../images/big-parrot.png");
   background-repeat: no-repeat;
   background-position: top 0 left calc(50% + 493px);
 }
@@ -1524,9 +1528,9 @@ body {
 
 .item-intro {
   padding: 58px 22px 45px 54px;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 5px 5px 0px 0px;
-  background-image: url('../images/paw.svg');
+  background-image: url("../images/paw.svg");
   background-repeat: no-repeat;
   background-position: top right;
 }
@@ -1559,7 +1563,7 @@ body {
 }
 
 .item-intro:nth-child(even) .item-intro__link {
-  background-color: #78C0DE;
+  background-color: #78c0de;
 }
 
 .item-intro__link {
@@ -1568,9 +1572,181 @@ body {
   border-radius: 3px;
   font-size: 16px;
   line-height: 21px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
   transition: 0.2s ease;
+}
+
+/* About page */
+.about-intro {
+}
+
+.about-intro__inner {
+  padding-top: 117px;
+  padding-bottom: 309px;
+  background-image: url("../images/about-paws.svg"),
+    url("../images/about-intro-bg.png");
+  background-repeat: no-repeat;
+  background-position: left 12px bottom 25px, bottom right 48px;
+}
+
+.about-intro__info {
+  display: inline-block;
+  width: 411px;
+  margin-left: 112px;
+}
+
+.about-intro__title {
+  margin-top: 0;
+  margin-bottom: 22px;
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 64px;
+  color: #333333;
+}
+
+.about-intro__text {
+  margin: 0;
+}
+
+/* About rules */
+.rules {
+  background-color: #fff;
+  border: 1px solid #f3f3f3;
+  background-image: inherit;
+}
+
+.rules__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rules__img {
+  position: relative;
+  left: -65px;
+}
+
+.rules__info {
+  display: inline-block;
+  width: 557px;
+}
+
+.rules__text {
+  margin: 0;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.orange-text {
+  color: #ffbd54;
+}
+
+/* Care */
+.care {
+  background-image: url("../images/about-dog-in-pink.png");
+  background-repeat: no-repeat;
+  background-position: top left calc(50% + 340px);
+}
+
+.care__inner {
+}
+
+.care__top {
+  padding-top: 115px;
+  padding-bottom: 220px;
+}
+
+.care__top-text-wrapper {
+  display: inline-block;
+  width: 494px;
+}
+
+.care__top-text:first-child {
+  margin-top: 0;
+  margin-bottom: 19px;
+}
+
+.care__top-text:last-child {
+  margin: 0;
+}
+
+.care__bottom {
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.care__bottom-info {
+  width: 416px;
+  margin-right: 30px;
+  flex-shrink: 0;
+}
+
+.info-bottom-care__title {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 48px;
+  color: #333333;
+}
+
+.info-bottom-care__text {
+  margin: 0;
+  padding-right: 83px;
+}
+
+.info-bottom-care__link-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 88px;
+}
+
+.info-bottom-care__link {
+  display: inline-block;
+  width: 9px;
+  height: 16px;
+  background-image: url("../images/servises-icon-left.svg");
+  background-size: 9px 16px;
+  background-position: center;
+}
+
+.info-bottom-care__link:nth-child(2) {
+  margin-left: 64px;
+  background-image: url("../images/servises-icon-right.svg");
+}
+
+.info-bottom-care__division {
+  margin-left: 75px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 22px;
+  color: #333333;
+}
+
+.sub-text {
+  font-size: 14px;
+  color: #949494;
+}
+
+.care__bottom-list {
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.care__bottom-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.care__bottom-img {
+  width: 307px;
+  height: 400px;
 }
 
 /* Footer */
@@ -1809,16 +1985,16 @@ body {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (-o-min-device-pixel-ratio: 2/1),
-only screen and (min-device-pixel-ratio: 2),
-only screen and (min-resolution: 192dpi),
-only screen and (min-resolution: 2dppx) {
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
   body {
     background-image: url("../images/bg@2x.png");
   }
   .hero {
     background-image: url("../images/pet-animals@2x.png"),
-    url("../images/parrot@2x.png");
+      url("../images/parrot@2x.png");
   }
   .update {
     background-image: url("../images/article-bg@2x.jpg");
