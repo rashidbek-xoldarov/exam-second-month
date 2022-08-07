@@ -1291,6 +1291,10 @@ body {
 }
 
 /* Contact */
+.contact {
+  margin-bottom: 247px;
+}
+
 .contact-container {
   max-width: 1480px;
   margin-right: auto;
@@ -1429,6 +1433,7 @@ body {
 
 /* Servises html */
 .intro {
+  margin-bottom: 168px;
   background-image: url("../images/big-parrot.png");
   background-repeat: no-repeat;
   background-position: top 0 left calc(50% + 493px);
@@ -1644,12 +1649,10 @@ body {
 
 /* Care */
 .care {
+  margin-bottom: 145px;
   background-image: url("../images/about-dog-in-pink.png");
   background-repeat: no-repeat;
   background-position: top left calc(50% + 340px);
-}
-
-.care__inner {
 }
 
 .care__top {
@@ -1749,9 +1752,174 @@ body {
   height: 400px;
 }
 
+/* Faq page */
+.faq {
+  padding-top: 118px;
+  padding-bottom: 270px;
+  background-image: url("../images/faq-cat.png"),
+    url("../images/faq-parrot.png");
+  background-repeat: no-repeat;
+  background-position: top 60px left calc(50% + 500px),
+    bottom 50px left calc(50% + 527px);
+}
+
+.faq__inner {
+}
+
+.faq__info {
+  display: inline-block;
+  margin-left: 112px;
+  margin-bottom: 63px;
+  width: 451px;
+}
+
+.faq__info-title {
+  margin-top: 0;
+  margin-bottom: 27px;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 64px;
+  color: #333333;
+}
+
+.faq__info-text {
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
+.faq__info-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 15px 38px 14px;
+  font-weight: 500;
+  line-height: 21px;
+  color: #ffffff;
+  background-color: #78c0de;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.faq__info-link::before {
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  content: "";
+  margin-right: 6px;
+  background-image: url("../images/icon-document.svg");
+}
+
+.faq__list-wrapper {
+  margin-left: 112px;
+}
+
+.faq__list {
+  width: 752px;
+  padding: 23px 41px 32px 63px;
+  background-color: #ffffff;
+  border: 1px solid #f3f3f3;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.faq__list:not(:last-child) {
+  margin-bottom: 18px;
+}
+
+.faq__list[open] .faq__item-text {
+  margin-bottom: 23px;
+}
+
+.faq__list[open] .faq__item-text::after {
+  transform: rotate(180deg);
+  transition: 0.2s ease;
+}
+
+.faq__list[open] {
+  padding-bottom: 75px;
+}
+
+.faq__list:nth-child(even) .faq__time::before {
+  background-image: url("../images/faq-paw-blue.svg");
+}
+
+.faq__list:nth-child(3n) .faq__item-text::after {
+  width: 21px;
+  height: 21px;
+  background-image: url("../images/clock.svg");
+}
+
+.faq__list[disabled] {
+  pointer-events: none;
+}
+
+.faq__list:nth-child(3n) {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.faq__item {
+  list-style: none;
+}
+
+.faq__time-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.faq__time {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 22px;
+  color: #333333;
+}
+
+.faq__time::before {
+  display: inline-block;
+  margin-right: 7px;
+  width: 21px;
+  height: 21px;
+  content: "";
+  background-image: url("../images/faq-paw-orange.svg");
+  background-position: center;
+}
+
+.faq__item-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 22px;
+  color: #333333;
+}
+
+.faq__item-text::after {
+  display: inline-block;
+  width: 16px;
+  height: 9px;
+  content: "";
+  background-image: url("../images/faq-arrow-up.svg");
+  background-repeat: no-repeat;
+  transition: 0.3s ease;
+}
+
+.faq__link {
+  margin-left: 28px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 22px;
+  color: #78c0de;
+  text-transform: uppercase;
+}
+
+.faq__list-top {
+}
+
 /* Footer */
 .site-footer {
-  margin-top: 247px;
   background-color: #f3f3f3;
   border: 1px solid #ebebeb;
 }
@@ -1982,6 +2150,171 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: #5c5c5c;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  opacity: 0.9;
+}
+
+.modal-open {
+  display: flex;
+}
+
+.modal__inner {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 850px;
+  padding: 119px 70px 137px;
+  background-color: #ffbd54;
+  background-image: url("../images/modal-dog.png"),
+    url("../images/madal-bg.png");
+  background-repeat: no-repeat;
+  background-position: left 25px bottom, center center;
+  opacity: 1;
+}
+
+.modal__social-list-wrapper {
+  margin-top: 29px;
+}
+
+.modal__social-title {
+  display: inline-block;
+  margin-bottom: 21px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #333333;
+}
+
+.modal__social__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.modal__social-item {
+  margin-bottom: 21px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+  background-color: #fff;
+}
+
+.modal__social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 238px;
+  padding: 15px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.modal__social-item:first-child .modal__social-link::before {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  content: "";
+  margin-right: 13px;
+  background-image: url("../images/google.svg");
+}
+
+.modal__social-item:last-child .modal__social-link::before {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  content: "";
+  margin-right: 13px;
+  background-image: url("../images/facebook.svg");
+}
+
+.modal__form-wrapper {
+  width: 358px;
+}
+
+.modal__form-title {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 54px;
+  color: #333333;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 335px;
+}
+
+.modal__input {
+  width: 100%;
+  margin-bottom: 21px;
+  padding: 16px 22px 13px;
+  line-height: 21px;
+  border: none;
+  color: #333333;
+  background-color: #fff;
+}
+
+.modal__input::placeholder {
+  font-size: 16px;
+  line-height: 21px;
+  color: #949494;
+}
+
+.modal__textarea {
+  width: 100%;
+  height: 165px;
+  margin-bottom: 27px;
+  padding: 16px 22px 13px;
+  line-height: 21px;
+  border: none;
+  color: #333333;
+  background-color: #fff;
+  resize: none;
+}
+
+.modal__input:focus,
+.modal__textarea:focus {
+  outline: 2px dashed rgb(163, 163, 246);
+  outline-offset: 2px;
+}
+
+.modal__form-btn {
+  padding: 14px 66px 15px 55px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  border: none;
+  background-color: #000000;
+}
+
+.modal__close {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../images/x-btn.svg");
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),

@@ -76,13 +76,15 @@
                   <a class="sitenav__link" href="./about.html">О Клинике</a>
                 </li>
                 <li class="sitenav__item">
-                  <a class="sitenav__link" href="./servises.html">Наши Услуги</a>
+                  <a class="sitenav__link" href="./servises.html"
+                    >Наши Услуги</a
+                  >
                 </li>
                 <li class="sitenav__item">
                   <a class="sitenav__link" href="#">Полезные Статьи</a>
                 </li>
                 <li class="sitenav__item">
-                  <a class="sitenav__link" href="#">FAQ</a>
+                  <a class="sitenav__link" href="./faq.html">FAQ</a>
                 </li>
                 <li class="sitenav__item">
                   <a class="sitenav__link" href="#">Контакты</a>
@@ -311,10 +313,7 @@
                 <img
                   class="article__img"
                   src="./images/cat.jpg"
-                  srcset="
-                    ./images/cat.jpg    1x,
-                    ./images/cat@2x.jpg 2x
-                  "
+                  srcset="./images/cat.jpg 1x, ./images/cat@2x.jpg 2x"
                   alt="article img"
                   width="305"
                   height="180"
@@ -545,7 +544,9 @@
                 <a class="site-footer__link" href="./about.html">О Клинике</a>
               </li>
               <li class="site-footer__item">
-                <a class="site-footer__link" href="./servises.html">Наши Услуги</a>
+                <a class="site-footer__link" href="./servises.html"
+                  >Наши Услуги</a
+                >
               </li>
             </ul>
             <ul class="site-footer__list">
@@ -553,7 +554,7 @@
                 <a class="site-footer__link" href="#">Полезные Статьи</a>
               </li>
               <li class="site-footer__item">
-                <a class="site-footer__link" href="#">FAQ</a>
+                <a class="site-footer__link" href="./faq.html">FAQ</a>
               </li>
               <li class="site-footer__item">
                 <a class="site-footer__link" href="#">Контакты</a>
@@ -608,5 +609,50 @@
     </footer>
 
     <!-- Site footer finish -->
+
+    <div class="modal">
+      <div class="modal__inner">
+        <div class="modal__social-list-wrapper">
+          <span class="modal__social-title">Авторизация:</span>
+          <ul class="modal__social__list">
+            <li class="modal__social-item">
+              <a class="modal__social-link" href="https://google.com">Войти через Google</a>
+            </li>
+            <li class="modal__social-item">
+              <a class="modal__social-link" href="https://facebook.com">Войти через Facebook</a>
+            </li>
+          </ul>
+        </div>
+        <div class="modal__form-wrapper">
+          <h2 class="modal__form-title">Задать вопрос</h2>
+          <form
+            class="modal__form"
+            action="https://echo.htmlacademy.ru"
+            method="post"
+            autocomplete="off"
+          >
+            <input
+              class="modal__input"
+              type="text"
+              name="user_name"
+              aria-label="username"
+              placeholder="Ваше имя"
+              required
+            />
+            <textarea
+              class="modal__textarea"
+              name="user__text"
+              placeholder="Опишите Ваш вопрос.
+Например: в каком возрасте можно
+прививать от бешенства?"
+            ></textarea>
+            <button class="modal__form-btn" type="submit">Отправить</button>
+          </form>
+        </div>
+        <button class="modal__close" type="button"></button>
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>
