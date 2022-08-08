@@ -1915,7 +1915,125 @@ body {
   text-transform: uppercase;
 }
 
-.faq__list-top {
+/* Blog hero */
+.blog-hero__inner {
+  background-image: url("../images/blog-cat.png");
+  background-repeat: no-repeat;
+  background-position: top 37px left calc(50% + 318px);
+}
+
+.blog-hero__info {
+  display: inline-block;
+  width: 560px;
+  margin-left: 112px;
+  padding-top: 118px;
+  padding-bottom: 132px;
+}
+
+.blog-hero__title {
+  margin-top: 0;
+  margin-bottom: 21px;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 64px;
+  color: #333333;
+}
+
+.blog-hero__text {
+  margin: 0;
+  padding-right: 113px;
+}
+
+/* Blog adice */
+.blog-advice {
+  margin-bottom: 126px;
+}
+
+.blog-advice__inner {
+  display: flex;
+  background: #ffffff;
+  border: 1px solid #f3f3f3;
+  border-radius: 5px;
+}
+
+.blog-advice__img {
+  width: 558px;
+  height: 525px;
+}
+
+.blog-adice__info {
+  display: flex;
+  flex-direction: column;
+  padding: 68px 110px 66px 81px;
+}
+
+.info-blog-advice__top-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blog-advice__hashtag-list {
+  display: flex;
+}
+
+.info-blog-advice__title {
+  margin-top: 35px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  color: #333333;
+}
+
+.info-blog-advice__big-text {
+  margin-top: 0;
+  margin-bottom: 48px;
+  padding-right: 41px;
+}
+
+/* Blog article */
+.blog-article {
+}
+
+.blog-article__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+.blog-article__list {
+  display: grid;
+  grid-template-columns: repeat(4, 305px);
+  grid-gap: 60px 30px;
+  margin-top: 0;
+  margin-bottom: 116px;
+  padding: 0;
+  letter-spacing: normal;
+}
+
+.blog-article__btn {
+  display: inline-flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px 40px;
+  font-weight: 500;
+  line-height: 21px;
+  color: #ffffff;
+  background-color: #333333;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.blog-article__btn::before {
+  display: inline-block;
+  margin-right: 6px;
+  width: 19px;
+  height: 16px;
+  content: "";
+  background-image: url("../images/load.svg");
 }
 
 /* Footer */
