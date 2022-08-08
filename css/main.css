@@ -2036,6 +2036,144 @@ body {
   background-image: url("../images/load.svg");
 }
 
+/* About hero */
+.contact-hero {
+  background-image: url("../images/contact-dog.png");
+  background-repeat: no-repeat;
+  background-position: top 18px left calc(50% + 565px);
+}
+
+.contact-hero__inner {
+  margin-left: 112px;
+  padding-top: 118px;
+}
+
+.contact-hero__info {
+  display: inline-block;
+  margin-bottom: 117px;
+  width: 447px;
+}
+
+.contact-hero__title {
+  margin-top: 0;
+  margin-bottom: 27px;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 64px;
+  color: #333333;
+}
+
+.contact-hero__text {
+  margin: 0;
+}
+
+.contact-hero__list {
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contact-hero__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact-hero__item::before {
+  display: inline-block;
+  margin-bottom: 30px;
+  width: 76px;
+  height: 73px;
+  content: "";
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.contact-hero__item:first-child::before {
+  background-image: url("../images/contact-location.svg");
+}
+
+.contact-hero__item:nth-child(2)::before {
+  background-image: url("../images/contact-calendar.svg");
+}
+
+.contact-hero__item:last-child::before {
+  background-image: url("../images/contact-phone.svg");
+}
+
+.site-footer__address.item-hero-contact__address {
+  margin-right: 118px;
+}
+
+.site-footer__address.item-hero-contact__address::before {
+  display: none;
+}
+
+.site-footer__time-list.item-hero-contact__time-list {
+  margin-right: 121px;
+}
+
+.site-footer__time-list.item-hero-contact__time-list::before {
+  display: none;
+}
+
+.site-footer__tel-list.item-hero-contact__tel-list::before {
+  display: none;
+}
+
+/* Contact find */
+.contact-find {
+  margin-bottom: 208px;
+}
+
+.contact-find__container {
+  max-width: 1480px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.contact-find__inner {
+  padding-top: 395px;
+  background-image: url("../images/contact-paws.svg");
+  background-repeat: no-repeat;
+  background-position: top 131px right 45px;
+}
+
+.contact-find__title {
+  margin-top: 0;
+  margin-bottom: 60px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 62px;
+  color: #333333;
+  text-align: center;
+}
+
+.contact-find__wrapper {
+  position: relative;
+  display: flex;
+}
+
+.contact-find__wrapper::before {
+  position: absolute;
+  top: -297px;
+  left: 23px;
+  display: inline-block;
+  width: 443px;
+  height: 342px;
+  content: "";
+  background-image: url("../images/contact-white-dog.png");
+}
+
+.contact-find__img {
+  width: 593px;
+  height: 466px;
+}
+
 /* Footer */
 .site-footer {
   background-color: #f3f3f3;
@@ -2280,8 +2418,7 @@ body {
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  background-color: #ffffff;
-  opacity: 0.9;
+  background-color: rgb(255, 255, 255, 0.9);
 }
 
 .modal-open {
