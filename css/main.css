@@ -1909,7 +1909,7 @@ body {
   width: 16px;
   height: 9px;
   content: "";
-  background-image: url("../images/faq-arrow-up.svg");
+  background-image: url("../images/faq-arrow-down.svg");
   background-repeat: no-repeat;
   transition: 0.3s ease;
 }
@@ -2446,6 +2446,18 @@ body {
   background-repeat: no-repeat;
   background-position: left 25px bottom, center center;
   opacity: 1;
+  animation: slide-in;
+  animation-duration: 2s;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    top: 0;
+  }
 }
 
 .modal__social-list-wrapper {
