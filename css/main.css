@@ -1848,8 +1848,16 @@ body {
   background-image: url("../images/clock.svg");
 }
 
-.faq__list[disabled] {
-  pointer-events: none;
+.faq__list[disabled] .faq__item-text::after {
+  transform: none;
+}
+
+.faq__list[disabled].faq__list[open] {
+  padding-bottom: 32px;
+}
+
+.faq__list[disabled].faq__list[open] .faq__item-text {
+  margin-bottom: 0;
 }
 
 .faq__list:nth-child(3n) {
