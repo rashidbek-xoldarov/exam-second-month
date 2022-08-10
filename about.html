@@ -81,7 +81,9 @@
                   >
                 </li>
                 <li class="sitenav__item">
-                  <a class="sitenav__link" href="./blog.html">Полезные Статьи</a>
+                  <a class="sitenav__link" href="./blog.html"
+                    >Полезные Статьи</a
+                  >
                 </li>
                 <li class="sitenav__item">
                   <a class="sitenav__link" href="./faq.html">FAQ</a>
@@ -121,32 +123,71 @@
 
       <!-- About rules -->
       <section class="rules">
-        <div class="container">
+        <div class="about-container">
           <div class="rules__inner">
-            <img
-              class="rules__img"
-              src="./images/about-house.jpg"
-              srcset="
-                ./images/about-house.jpg    1x,
-                ./images/about-house@2x.jpg 2x
-              "
-              alt="rules house image"
-              width="705"
-              height="449"
-            />
-            <div class="rules__info">
-              <p class="rules__text">
-                Принимая решение о том, чтобы завести
-                <span class="orange-text">домашнего любимца</span>, или уже имея
-                его, мы не должны забывать, что животное это живой организм,
-                который требует не только нашей любви, а и заботы о её здоровье
-                и внешнем виде.<span class="orange-text">Ответственность</span>
-                хозяина заключается в чётком выполнении правил по уходу за
-                животным, своевременного обращения к врачу за консультацией и
-                помощи в решении любого вопроса. Ведь мы в ответе за тех, кого
-                приручили!
-              </p>
-            </div>
+            <ul class="ruler__list">
+              <li class="ruler__item">
+                <img
+                  class="rules__img"
+                  src="./images/about-house.jpg"
+                  srcset="
+                    ./images/about-house.jpg    1x,
+                    ./images/about-house@2x.jpg 2x
+                  "
+                  alt="rules house image"
+                  width="705"
+                  height="449"
+                />
+                <div class="rules__info">
+                  <p class="rules__text">
+                    Принимая решение о том, чтобы завести
+                    <span class="orange-text">домашнего любимца</span>, или уже
+                    имея его, мы не должны забывать, что животное это живой
+                    организм, который требует не только нашей любви, а и заботы
+                    о её здоровье и внешнем виде.<span class="orange-text"
+                      >Ответственность</span
+                    >
+                    хозяина заключается в чётком выполнении правил по уходу за
+                    животным, своевременного обращения к врачу за консультацией
+                    и помощи в решении любого вопроса. Ведь мы в ответе за тех,
+                    кого приручили!
+                  </p>
+                </div>
+              </li>
+              <li class="ruler__item">
+                <div class="rules__item-text-wrapper">
+                  <p class="rules__item-text">
+                    Ветеринарная клиника предоставляет широкий спектр услуг,
+                    начиная от простых профилактических мероприятий до сложных
+                    хирургических вмешательств. Мы проводим рентгенографические,
+                    ультразвуковые исследования.Проводится анализ крови как
+                    общеклинический, так и биохимический. Проводится общий
+                    анализ мочи с микроскопией осадка.
+                  </p>
+                  <p class="rules__item-text">
+                    Только у нас Вы можете провести
+                    <span class="blue-text">анализ крови кошек</span> на такие
+                    заболевания как панлейкопения, кальцивироз, герпесвирусная
+                    инфекция, короновироз, токсоплазмоз и хламидиоз. А также
+                    <span class="blue-text">собак на такие заболевания</span>
+                    как инфекционный гепатит, парвовирусный энтерит, чума
+                    плотоядных. С полным спектром услуг можно ознакомиться
+                    здесь.
+                  </p>
+                </div>
+                <img
+                  class="rules__item-image"
+                  src="./images/about-dog-in-pink.png"
+                  srcset="
+                    ./images/about-dog-in-pink.png    1x,
+                    ./images/about-dog-in-pink@2x.png 2x
+                  "
+                  alt="rules mg"
+                  width="797"
+                  height="532"
+                />
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -154,89 +195,65 @@
 
       <!-- Care -->
       <section class="care">
-        <div class="container">
+        <div class="about-container">
           <div class="care__inner">
-            <div class="care__top">
-              <div class="care__top-text-wrapper">
-                <p class="care__top-text">
-                  Ветеринарная клиника предоставляет широкий спектр услуг,
-                  начиная от простых профилактических мероприятий до сложных
-                  хирургических вмешательств. Мы проводим рентгенографические,
-                  ультразвуковые исследования.Проводится анализ крови как
-                  общеклинический, так и биохимический. Проводится общий анализ
-                  мочи с микроскопией осадка.
-                </p>
-                <p class="care__top-text">
-                  Только у нас Вы можете провести
-                  <span class="blue-text">анализ крови кошек</span> на такие
-                  заболевания как панлейкопения, кальцивироз, герпесвирусная
-                  инфекция, короновироз, токсоплазмоз и хламидиоз. А также
-                  <span class="blue-text">собак на такие заболевания</span> как
-                  инфекционный гепатит, парвовирусный энтерит, чума плотоядных.
-                  С полным спектром услуг можно ознакомиться здесь.
+            <div class="care__bottom-info info-bottom-care">
+              <h2 class="info-bottom-care__title">
+                Хочешь подстричь <span class="orange-text">питомца?</span>
+              </h2>
+              <p class="info-bottom-care__text">
+                В лечебнице работает кабинет груммера, после посещения которого,
+                Ваш любимец будет особенно неотразим и привлекателен.
+              </p>
+              <div class="info-bottom-care__link-wrapper">
+                <span class="info-bottom-care__link"></span>
+                <span class="info-bottom-care__link"></span>
+                <p class="info-bottom-care__division">
+                  <sup>1</sup>/<sub class="sub-text">5</sub>
                 </p>
               </div>
             </div>
-            <div class="care__bottom">
-              <div class="care__bottom-info info-bottom-care">
-                <h2 class="info-bottom-care__title">
-                  Хочешь подстричь <span class="orange-text">питомца?</span>
-                </h2>
-                <p class="info-bottom-care__text">
-                  В лечебнице работает кабинет груммера, после посещения
-                  которого, Ваш любимец будет особенно неотразим и
-                  привлекателен.
-                </p>
-                <div class="info-bottom-care__link-wrapper">
-                  <span class="info-bottom-care__link"></span>
-                  <span class="info-bottom-care__link"></span>
-                  <p class="info-bottom-care__division">
-                    <sup>1</sup>/<sub class="sub-text">5</sub>
-                  </p>
-                </div>
-              </div>
-              <ul class="care__bottom-list">
-                <li class="care__bottom-item">
-                  <img
-                    class="care__bottom-img"
-                    src="./images/about-woman.jpg"
-                    srcset="
-                      ./images/about-woman.jpg    1x,
-                      ./images/about-woman@2x.jpg 2x
-                    "
-                    alt="care bottom image"
-                    width="307"
-                    height="400"
-                  />
-                </li>
-                <li class="care__bottom-item">
-                  <img
-                    class="care__bottom-img"
-                    src="./images/about-cat.jpg"
-                    srcset="
-                      ./images/about-cat.jpg    1x,
-                      ./images/about-cat@2x.jpg 2x
-                    "
-                    alt="care bottom image"
-                    width="307"
-                    height="400"
-                  />
-                </li>
-                <li class="care__bottom-item">
-                  <img
-                    class="care__bottom-img"
-                    src="./images/about-dog-with-hair.jpg"
-                    srcset="
-                      ./images/about-dog-with-hair.jpg    1x,
-                      ./images/about-dog-with-hair@2x.jpg 2x
-                    "
-                    alt="care bottom image"
-                    width="307"
-                    height="400"
-                  />
-                </li>
-              </ul>
-            </div>
+            <ul class="care__bottom-list">
+              <li class="care__bottom-item">
+                <img
+                  class="care__bottom-img"
+                  src="./images/about-woman.jpg"
+                  srcset="
+                    ./images/about-woman.jpg    1x,
+                    ./images/about-woman@2x.jpg 2x
+                  "
+                  alt="care bottom image"
+                  width="307"
+                  height="400"
+                />
+              </li>
+              <li class="care__bottom-item">
+                <img
+                  class="care__bottom-img"
+                  src="./images/about-cat.jpg"
+                  srcset="
+                    ./images/about-cat.jpg    1x,
+                    ./images/about-cat@2x.jpg 2x
+                  "
+                  alt="care bottom image"
+                  width="307"
+                  height="400"
+                />
+              </li>
+              <li class="care__bottom-item">
+                <img
+                  class="care__bottom-img"
+                  src="./images/about-dog-with-hair.jpg"
+                  srcset="
+                    ./images/about-dog-with-hair.jpg    1x,
+                    ./images/about-dog-with-hair@2x.jpg 2x
+                  "
+                  alt="care bottom image"
+                  width="307"
+                  height="400"
+                />
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -275,7 +292,9 @@
             </ul>
             <ul class="site-footer__list">
               <li class="site-footer__item">
-                <a class="site-footer__link" href="./blog.html">Полезные Статьи</a>
+                <a class="site-footer__link" href="./blog.html"
+                  >Полезные Статьи</a
+                >
               </li>
               <li class="site-footer__item">
                 <a class="site-footer__link" href="./faq.html">FAQ</a>

@@ -98,6 +98,7 @@ body {
   background-color: var(--main-bg-color);
   background-image: url("../images/bg.png");
   background-position: top 100px center;
+  overflow-x: hidden;
 }
 
 /* VISUALLY-HIDDEN */
@@ -1586,6 +1587,12 @@ body {
 .about-intro {
 }
 
+.about-container {
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .about-intro__inner {
   padding-top: 117px;
   padding-bottom: 309px;
@@ -1616,25 +1623,41 @@ body {
 
 /* About rules */
 .rules {
-  background-color: #fff;
-  border: 1px solid #f3f3f3;
-  background-image: inherit;
 }
 
-.rules__inner {
+.ruler__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ruler__item {
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+}
+
+.ruler__item:first-child {
+  background-color: #ffffff;
+  border: 1px solid #f3f3f3;
+  border-radius: 5px;
+}
+
+.ruler__item:last-child {
+  justify-content: flex-end;
 }
 
 .rules__img {
-  position: relative;
-  left: -65px;
+  width: 705px;
+  height: 449px;
 }
 
 .rules__info {
   display: inline-block;
   width: 557px;
+  margin-left: 112px;
 }
 
 .rules__text {
@@ -1647,37 +1670,29 @@ body {
   color: #ffbd54;
 }
 
-/* Care */
-.care {
-  margin-bottom: 145px;
-  background-image: url("../images/about-dog-in-pink.png");
-  background-repeat: no-repeat;
-  background-position: top left calc(50% + 340px);
-}
-
-.care__top {
-  padding-top: 115px;
-  padding-bottom: 220px;
-}
-
-.care__top-text-wrapper {
-  display: inline-block;
+.rules__item-text-wrapper {
   width: 494px;
 }
 
-.care__top-text:first-child {
+.rules__item-text {
   margin-top: 0;
   margin-bottom: 19px;
 }
 
-.care__top-text:last-child {
-  margin: 0;
+.rules__item-image {
+  width: 797px;
+  height: 532px;
 }
 
-.care__bottom {
+/* Care */
+.care {
+  margin-bottom: 145px;
+}
+
+.care__inner {
   display: flex;
   align-items: flex-end;
-  overflow: hidden;
+  margin-left: 150px;
 }
 
 .care__bottom-info {
